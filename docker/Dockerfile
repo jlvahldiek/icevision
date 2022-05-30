@@ -15,4 +15,4 @@ RUN pip install slicerio
 
 EXPOSE 8889
 
-CMD ["jupyter", "notebook", "--allow-root", "--port=8889", "--ip=0.0.0.0", "--no-browser"]
+CMD ["jupyter", "notebook", "--allow-root", "--port=8889", "--ip=0.0.0.0", "--no-browser", "--NotebookApp.token=''"]
