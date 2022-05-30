@@ -8,3 +8,11 @@ RUN pip install mmcv-full==1.3.7 -f https://download.openmmlab.com/mmcv/dist/cu1
 RUN pip install mmdet==2.13.0 -U
 RUN pip install mmsegmentation==0.17.0 -U
 RUN pip install ipywidgets
+RUN pip install python-gdcm
+RUN pip install pydicom
+RUN pip install pynrrd
+RUN pip install slicerio
+
+EXPOSE 8889
+
+CMD ["jupyter", "notebook", "--allow-root", "--port=8889", "--ip=0.0.0.0", "--no-browser"]
