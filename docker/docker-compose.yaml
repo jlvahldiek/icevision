@@ -10,4 +10,5 @@ services:
       - "8889:8889"
     tty: true
     volumes:
-      - ./:/workspace/
+      - /path/to/notebook/files/:/workspace/
+      - /path/to/annotation/data/:/data/
