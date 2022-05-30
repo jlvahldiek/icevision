@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
       context: .
     image: ice
+    ports:
+      - "8889:8889"
     tty: true
     volumes:
       - ../:/root/
