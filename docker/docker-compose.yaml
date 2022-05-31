@@ -10,6 +10,7 @@ services:
     image: ice
     ports:
       - "8889:8889"
+    ipc: host
     tty: true
     volumes:
       - /path/to/notebook/files/:/workspace/
