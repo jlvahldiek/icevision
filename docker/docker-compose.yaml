@@ -5,6 +5,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    
+    runtime: nvidia
     image: ice
     ports:
       - "8889:8889"
@@ -12,3 +14,4 @@ services:
     volumes:
       - /path/to/notebook/files/:/workspace/
       - /path/to/annotation/data/:/data/
+    working_dir: /workspace
